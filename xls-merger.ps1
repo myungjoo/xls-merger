@@ -99,9 +99,16 @@ try {
         }
     }
 
-    # 7. 저장
-    $DestWb.SaveAs($OutputFilePath)
-    $DestWb.Close($true)
+    # 7. 저장 (수정된 부분)
+    # 경고 팝업 및 호환성 체크 팝업을 강제로 끕니다.
+    $Excel.DisplayAlerts = $false
+    $DestWb.CheckCompatibility = $false
+    
+    # 51 = xlOpenXMLWorkbook (.xlsx 포맷을 명시하여 저장 대화상자 방지)
+    $DestWb.SaveAs($OutputFilePath, 51)
+    
+    # 이미 SaveAs로 저장했으므로, Close할 때는 저장하지 않음($false)으로 종료
+    $DestWb.Close($false)
     
     Write-Host "`n모든 작업이 완료되었습니다: $OutputFileName" -ForegroundColor Cyan
 }
