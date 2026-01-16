@@ -4,7 +4,7 @@ Windows Registry Editor Version 5.00
 ; 1. 폴더 아이콘 위에서 우클릭했을 때 ("폴더" 메뉴)
 ; ------------------------------------------------------------------
 [HKEY_CLASSES_ROOT\Directory\shell\MergeXls]
-@="이 폴더의 Excel 파일 병합하기 (Merge .xlsx)"
+@="Merge .xlsx files in the folder"
 "Icon"="excel.exe"
 
 [HKEY_CLASSES_ROOT\Directory\shell\MergeXls\command]
@@ -17,7 +17,7 @@ Windows Registry Editor Version 5.00
 ; 2. 폴더 내부 빈 공간에서 우클릭했을 때 ("배경" 메뉴)
 ; ------------------------------------------------------------------
 [HKEY_CLASSES_ROOT\Directory\Background\shell\MergeXls]
-@="이 폴더의 Excel 파일 병합하기 (Merge .xlsx)"
+@="Merge .xlsx files in the folder"
 "Icon"="excel.exe"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\MergeXls\command]
