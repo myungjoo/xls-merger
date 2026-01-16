@@ -10,6 +10,7 @@
 #>
 
 param (
+    # 우클릭으로 넘어오는 경로($args[0])가 있으면 그걸 쓰고, 없으면 현재 위치 사용
     [string]$TargetDirectory = (Get-Location).Path
 )
 
