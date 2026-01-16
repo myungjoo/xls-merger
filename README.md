@@ -6,7 +6,8 @@ This merges .xlsx files. (not .xls yet)
 # How to install
 
 1. copy xls-merger.ps1 to c:\xls-merger\
-2. copy register-mxls-merger.reg to your PC and run it.
+2. security release (right click to xls-merger.ps1 --> properties --> security check)
+3. copy register-mxls-merger.reg to your PC and run it.
 
 # How to use
 
